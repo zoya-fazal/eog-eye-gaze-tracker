@@ -6,9 +6,11 @@ Predicts where a person is looking on a screen from their EOG (electrooculograph
 
 *The red dot is the model's prediction of where the person is looking. Underneath, the horizontal (blue) and vertical (orange) EOG signals drive it. The example data is simulated.*
 
-## Quick start
+## Quick test
 
 You need Python 3.9 or newer.
+
+Download the zip file and open it on any code editor (I use VS code). Then open a new terminal and type the following command:
 
 ```
 pip install -r requirements.txt
@@ -16,6 +18,8 @@ python run_demo.py
 ```
 
 On a Mac, type `pip3` and `python3` instead.
+
+The result uses example EOG data (has been calibrated already). However, this application can use any EOG data to calibrate and therefore predict eye gaze (x,y coordinates).
 
 `run_demo.py` trains the model on the example data the first time you run it, then opens the live animation. Keys: space = pause, left/right arrows = skip 5 s, q = quit.
 

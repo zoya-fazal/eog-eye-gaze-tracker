@@ -1,0 +1,4 @@
+numpy
+scipy
+matplotlib
+pygame    # only needed to show the calibration targets
